@@ -1,0 +1,28 @@
+[tool.ruff]
+lint.ignore = [
+    "E731",
+    "E741",
+    "PLR0911",
+    "PLR0912",
+    "PLR0913",
+    "PLR0915",
+    "PLR2004",
+    "PLR5501",
+    "PLW2901",
+    "RUF012",
+]
+lint.select = [
+    "ARG",
+    "E",
+    "F",
+    "I",
+    "PL",
+    "RUF",
+    "SIM",
+    "UP",
+]
+dependencies = [
+    "python-telegram-bot==20.8",
+    "aiogram==2.25.1",
+    "python-dotenv==1.0.0",
+]

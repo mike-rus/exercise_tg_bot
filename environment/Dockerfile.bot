@@ -1,0 +1,11 @@
+FROM python:3.9-slim
+
+ENV PYTHONUNBUFFERED 1
+ENV PYTHONDONTWRITEBYTECODE 1
+
+WORKDIR /home/whore
+
+COPY requirements.txt /tmp
+
+RUN python3.9 -m pip install --user -r /tmp/requirements.txt
+CMD ["python", "src/main.py"]
